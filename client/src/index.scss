@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+:root{
+    --main-color:#007bff;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-size: clamp(1.875rem, 1.5682rem + 1.6364vw, 3rem);
+}
+
+.title{
+    @apply font-bold text-main-color text-center text-4xl 
+}
+
+.wrapper{
+    @apply max-w-[1200px] mx-auto
+}
+
+.page{
+    min-height: 90vh;
+}
